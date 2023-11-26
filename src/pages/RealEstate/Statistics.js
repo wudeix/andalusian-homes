@@ -66,7 +66,7 @@ class Statistics extends Component {
     render() {
         return (
             <React.Fragment>
-                <section className="section bg-light">
+                <section className="section bg-light" id="statsSection">
                     <Container className="mt-0 mt-0">
                         <Row xs="12" className="justify-content-center">
                             <Col className="text-center">

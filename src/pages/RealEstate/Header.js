@@ -29,7 +29,7 @@ export default class Header extends Component {
     render() {
         return (
             <React.Fragment>
-                <section className="bg-half-260 d-table w-100">
+                <section className="bg-half-260 d-table w-100" id="homeSection">
                     <BackgroundSlider
                         images={this.state.items}
                         duration={10}

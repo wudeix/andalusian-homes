@@ -44,7 +44,7 @@ const AboutUs = () => {
     });
     return (
         <React.Fragment>
-            <section className="section">
+            <section className="section" id="aboutUsSection">
                 <Container>
                     <SectionTitle
                         title="About Us"

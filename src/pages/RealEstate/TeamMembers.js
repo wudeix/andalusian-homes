@@ -52,6 +52,17 @@ const TeamMembers = () => {
                                     <small className="designation text-muted">
                                         {members.position}
                                     </small>
+                                    <br/>
+                                    {
+                                        members.phone.map((phone, index) => {
+                                            return (
+                                                <small key={index} className="designation text-muted">
+                                                    {phone}
+                                                    <br/>
+                                                </small>
+                                            );
+                                        })
+                                    }
                                 </div>
                             </Card>
                         </Col>

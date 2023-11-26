@@ -13,7 +13,7 @@ export default class Blog extends Component {
         return (
             <React.Fragment>
                 <section
-                    className="section bg-white pt-0"
+                    className="section bg-white"
                 >
                     <Container>
                         <Row className="justify-content-center">

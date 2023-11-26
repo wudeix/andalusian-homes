@@ -20,7 +20,7 @@ import HostingBlogDetail from "../pages/DemoCloudHosting/HostingBlogDetail";
 const routes = [
     {path: "/", component: RealEstate},
 
-    {path: "/blog-about", component: BlogAbout, isWithoutLayout: true},
+    /*{path: "/blog-about", component: BlogAbout, isWithoutLayout: true},
 
 
     {path: "/hosting-blog", component: HostingBlog, isWithoutLayout: true},
@@ -36,7 +36,7 @@ const routes = [
 
     //Utility
     {path: "/page-terms", component: PageTerms, isTopbarDark: true},
-    {path: "/page-privacy", component: PagePrivacy, isTopbarDark: true},
+    {path: "/page-privacy", component: PagePrivacy, isTopbarDark: true},*/
 
 ];
 

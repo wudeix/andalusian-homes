@@ -36,6 +36,7 @@ export default class Client extends Component {
                     img: img1,
                     name: "Ronald Kinsey",
                     post: "User",
+                    review: "",
                 },
                 {
                     id: 2,
