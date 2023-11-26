@@ -5,9 +5,6 @@ import {Container, Row, Col} from "reactstrap";
 import Counter2 from "../../components/Shared/counter2";
 
 import Asset190 from "../../assets/images/illustrator/Asset190.svg";
-import Asset189 from "../../assets/images/illustrator/Asset189.svg";
-import Asset186 from "../../assets/images/illustrator/Asset186.svg";
-import Asset187 from "../../assets/images/illustrator/Asset187.svg";
 
 class Statistics extends Component {
     constructor(props) {
@@ -22,22 +19,29 @@ class Statistics extends Component {
                     postfix: "+"
                 },
                 {
-                    title: "Apartments/Villas",
-                    image: Asset189,
-                    start: 4950,
+                    title: "Apartments",
+                    image: Asset190,
+                    start: 4200,
+                    value: 4500,
+                    postfix: "+"
+                },
+                {
+                    title: "Villas",
+                    image: Asset190,
+                    start: 4900,
                     value: 5000,
                     postfix: "+"
                 },
                 {
                     title: "Plots Of Land",
-                    image: Asset187,
-                    start: 950,
+                    image: Asset190,
+                    start: 900,
                     value: 1000,
                     postfix: "+"
                 },
                 {
                     title: "New Developments",
-                    image: Asset187,
+                    image: Asset190,
                     start: 250,
                     value: 300,
                     postfix: "+"
@@ -62,10 +66,10 @@ class Statistics extends Component {
     render() {
         return (
             <React.Fragment>
-                <section className="section">
+                <section className="section bg-light">
                     <Container className="mt-0 mt-0">
-                        <Row className="justify-content-center">
-                            <Col xs="12" className="text-center">
+                        <Row xs="12" className="justify-content-center">
+                            <Col className="text-center">
                                 <div className="section-title mb-4 pb-2">
                                     <h4 className="title mb-4">
                                         We have access to 99% of all property sales offers on the Coast
@@ -73,7 +77,7 @@ class Statistics extends Component {
                                 </div>
                             </Col>
                         </Row>
-                        <Row id="counter">
+                        <Row id="counter" className="justify-content-center">
                             {/* counter */}
                             <Counter2 counters={this.state.counters}/>
                         </Row>

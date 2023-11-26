@@ -7,7 +7,7 @@ class Counter2 extends Component {
         return (
             <React.Fragment>
                 {this.props.counters.map((counter, key) => (
-                    <Col md="3" xs="6" key={key} className="mt-4 pt-2">
+                    <Col md="2" xs="6" key={key} className="mt-4 pt-2">
                         <div className="counter-box text-center">
                             <img src={counter.image} height="70" className="avatar avatar-small" alt=""/>
                             <h2 className="mb-0 mt-4">
