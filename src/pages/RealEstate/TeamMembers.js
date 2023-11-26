@@ -1,7 +1,7 @@
 import React from "react";
 import {Card, Col, Container, Row} from "reactstrap";
 import {Link} from "react-router-dom";
-import {realEstateTeamMembers} from "../../common/data";
+import {teamMembers} from "../../common/base-data";
 
 //Import Icons
 import FeatherIcon from "feather-icons-react";
@@ -12,50 +12,27 @@ const TeamMembers = () => {
             <Container className="">
                 <Row className="justify-content-center">
                     <Col xs={12}>
-                        <div className="section-title mb-4 pb-2 text-center">
+                        <div className="section-title pb-2 text-center">
                             <h4 className="title mb-4">Team Members</h4>
                         </div>
                     </Col>
                 </Row>
-                <Row>
-                    {realEstateTeamMembers.map((members, key) => (
-                        <Col lg={3} md={6} className="mt-4 pt-2" key={key}>
-                            <Card className="team text-center border-0">
+                <Row className="justify-content-center">
+                    {teamMembers.map((members, key) => (
+                        <Col lg={2} md={6} className="pt-2" key={key}>
+                            <Card
+                                className="team text-center border-0"
+                            >
                                 <div className="position-relative">
-                                    <img src={members.img} className="img-fluid" alt=""/>
+                                    <img
+                                        src={members.img}
+                                        className="img-fluid"
+                                        alt={members.name}
+                                    />
                                     <ul className="list-unstyled mb-0 team-icon">
                                         <li className="list-inline-item ms-1">
-                                            <Link to="#" className="btn btn-primary btn-pills btn-sm btn-icon">
-                                                <i>
-                                                    <FeatherIcon
-                                                        icon="facebook"
-                                                        className="fea icon-sm fea-social"
-                                                    />
-                                                </i>
-                                            </Link>
-                                        </li>
-                                        <li className="list-inline-item ms-1">
-                                            <Link to="#" className="btn btn-primary btn-pills btn-sm btn-icon">
-                                                <i>
-                                                    <FeatherIcon
-                                                        icon="instagram"
-                                                        className="fea icon-sm fea-social"
-                                                    />
-                                                </i>
-                                            </Link>
-                                        </li>
-                                        <li className="list-inline-item ms-1">
-                                            <Link to="#" className="btn btn-primary btn-pills btn-sm btn-icon">
-                                                <i>
-                                                    <FeatherIcon
-                                                        icon="twitter"
-                                                        className="fea icon-sm fea-social"
-                                                    />
-                                                </i>
-                                            </Link>
-                                        </li>
-                                        <li className="list-inline-item ms-1">
-                                            <Link to="#" className="btn btn-primary btn-pills btn-sm btn-icon">
+                                            <Link to={members.linkedin}
+                                                  className="btn btn-primary btn-pills btn-sm btn-icon">
                                                 <i>
                                                     <FeatherIcon
                                                         icon="linkedin"
