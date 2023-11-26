@@ -4,7 +4,6 @@ import React, {Component} from "react";
 import Header from "./Header";
 import Client from "./Client";
 import Blog from "./Blog";
-import Popup from "../../components/Layout/popup";
 import FeaturedItems from "./FeaturedItems";
 import FeaturedItems01 from "./FeaturedItems01";
 import FeaturedItems02 from "./FeaturedItems02";
@@ -92,7 +91,6 @@ export default class index extends Component {
                     <Client/>
                 </section>
                 <Blog/>
-                <Popup/>
             </React.Fragment>
         );
     }
