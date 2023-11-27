@@ -199,14 +199,37 @@ class FeaturedItems01 extends Component {
         return (
             <React.Fragment>
                 <Container>
-                    <Row className="align-items-center">
-                        <SectionTitle
+                    <SectionTitle
                             title="Selected new villa developments"
                             desc=""
                         />
+                    <Row className="align-items-center">
                         <Col lg={12} className="mt-4 mt-lg-0 pt-2 pt-lg-0">
                             <div id="two-testi" className="owl-carousel owl-theme">
-                                <Slider {...settings2} className="owl-carousel owl-theme">
+                                <Slider
+                                    {...settings2}
+                                    responsive={[
+                                        {
+                                            breakpoint: 1200,
+                                            settings: {
+                                                slidesToShow: 3,
+                                            },
+                                        },
+                                        {
+                                            breakpoint: 992,
+                                            settings: {
+                                                slidesToShow: 2,
+                                            },
+                                        },
+                                        {
+                                            breakpoint: 600,
+                                            settings: {
+                                                slidesToShow: 1,
+                                            },
+                                        },
+                                    ]}
+                                    className="owl-carousel owl-theme"
+                                        >
                                     {this.state.products.map((product, key) => (
                                         <div key={key} style={{marginLeft: 5, marginRight: 5}}>
                                             <Card
