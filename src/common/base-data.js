@@ -11,7 +11,7 @@ const teamMembers = [
         name: "Maciej Małkowski",
         position: "Co-owner - Sales",
         languages: ['english', 'polish'],
-        phone: ['+48 697 979 962', '+34 647 617 427'],
+        phone: ['+48 729 979 962', '+34 647 617 427'],
         linkedin: '#',
         description: 'Maciej gained valuable marketing and sales experience working for prestigious brands in Poland and has skills in market analysis and understanding consumer needs - a key element in the real estate industry. In Spain for a year, previously working for a well-known British real estate company from Marbella.'
     },
